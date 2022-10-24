@@ -1,6 +1,6 @@
 import express from "express";
 import * as dotenv from "dotenv";
-import { MongoClient } from "mongoDB";
+import { MongoClient } from "mongodb";
 dotenv.config();
 
 const app = express();
@@ -93,6 +93,13 @@ app.put("/Assign_Mentor/:id", async function (req, res) {
   }
 });
 
+// app.patch("/addstudent",async function (req,res) {
+//   const student_name = req.body;
+
+// })
+
+
+
 app.get("/allstudents", async function (req, res) {
   const result = await client
     .db("Student_Mentor_Assignment")
@@ -102,7 +109,7 @@ app.get("/allstudents", async function (req, res) {
   res.send(result);
 });
 
-const port = process.env.PORT;
+const port = process.env.PORT || 5000;
 app.listen(port, () => {
   console.log(`app started in ${port}`);
 });
