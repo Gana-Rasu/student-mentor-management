@@ -5,7 +5,7 @@
 var request = require('request');
 var options = {
   'method': 'POST',
-  'url': 'http://localhost:4000/student',
+  'url': 'http://localhost:5000/student',
   'headers': {
     'Content-Type': 'application/json'
   },
@@ -37,7 +37,7 @@ request(options, function (error, response) {
 var request = require('request');
 var options = {
   'method': 'POST',
-  'url': 'http://localhost:4000/mentor',
+  'url': 'http://localhost:5000/mentor',
   'headers': {
     'Content-Type': 'application/json'
   },
@@ -77,7 +77,7 @@ request(options, function (error, response) {
 var request = require('request');
 var options = {
   'method': 'PUT',
-  'url': 'http://localhost:4000/Assign_Mentor/3',
+  'url': 'http://localhost:5000/Assign_Mentor/3',
   'headers': {
     'Content-Type': 'application/json'
   },
@@ -97,7 +97,7 @@ request(options, function (error, response) {
 var request = require('request');
 var options = {
   'method': 'GET',
-  'url': 'http://localhost:4000/allstudents',
+  'url': 'http://localhost:5000/allstudents',
   'headers': {
     'Content-Type': 'application/json'
   },
