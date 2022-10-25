@@ -93,12 +93,6 @@ app.put("/Assign_Mentor/:id", async function (req, res) {
   }
 });
 
-// app.patch("/addstudent",async function (req,res) {
-//   const student_name = req.body;
-
-// })
-
-
 
 app.get("/allstudents", async function (req, res) {
   const result = await client
@@ -113,3 +107,5 @@ const port = process.env.PORT || 5000;
 app.listen(port, () => {
   console.log(`app started in ${port}`);
 });
+
+
